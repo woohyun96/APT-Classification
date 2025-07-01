@@ -95,6 +95,11 @@ The malware hashes were collected from multiple threat intelligence reports, and
 - Input: 3-gram vectors, Label: APT group
 - Best hyperparameters (via 10-fold CV): C = 100, γ = 10
 - Accuracy: Training(98.7%), Test(96.7%)
+
+<img src="images/confusion_matrix_test.png" alt="confusion_matrix_test.png" align="left" width="70%">
+
+<br clear="left" />
+
 ---
 
 ### Adversarial Attack (DarkHotel)
