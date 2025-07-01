@@ -36,7 +36,7 @@ Malware samples from five APT groups:
 
 - Identified the top 20 3-grams per group.
 
-<img src="images/extract_top20_ngrams_by_group.png" alt="Top 20 N-grams by Group" align="left" width="50%">
+<img src="images/extract_top20_ngrams_by_group.png" alt="Top 20 N-grams by Group" align="left" width="60%">
 
 <br clear="left" />
 <br>
