@@ -22,6 +22,8 @@ Malware samples from five APT groups:
 
 ## Preprocessing
 
+The malware hashes were collected from multiple threat intelligence reports, and the corresponding samples were retrieved via VirusTotal. Several randomly selected hashes from the dataset were confirmed to be actual malware when rechecked on VirusTotal.
+
 ### 1. N-gram Feature Extraction
 
 - Disabled `.exe` functionality from binaries.
