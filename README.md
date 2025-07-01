@@ -35,10 +35,11 @@ Malware samples from five APT groups:
 ### 2. Group-wise Top 20 N-gram Extraction
 
 - Identified the top 20 3-grams per group.
-  
+
 <img src="images/extract_top20_ngrams_by_group.png" alt="Top 20 N-grams by Group" align="left" width="50%">
 
 <br clear="left" />
+<br>
 
 > Script: `extract_top20_ngrams_by_group.py`
 
@@ -61,8 +62,10 @@ Malware samples from five APT groups:
 
 - Visualized top 30 high-variance n-grams across groups.
 
-![ngram_balanced_heatmap_en](ngram_balanced_heatmap_en.png)
-<img src="ngram_balanced_heatmap_en.png">
+<img src="images/ngram_balanced_heatmap_en.png" alt="N-gram Heatmap" align="left" width="50%">
+
+<br clear="left" />
+<br>
 
 > Script: `apt_ngram_heatmap.py`
 
