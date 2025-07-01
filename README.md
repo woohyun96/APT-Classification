@@ -62,7 +62,7 @@ Malware samples from five APT groups:
 
 - Visualized top 30 high-variance n-grams across groups.
 
-<img src="images/ngram_balanced_heatmap_en.png" alt="N-gram Heatmap" align="left" width="50%">
+<img src="images/ngram_balanced_heatmap_en.png" alt="N-gram Heatmap" align="left" width="100%">
 
 <br clear="left" />
 <br>
