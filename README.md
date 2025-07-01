@@ -91,16 +91,37 @@ The malware hashes were collected from multiple threat intelligence reports, and
 ### Defense Model
 
 - Model: RBF-SVM
+- Samples: Training(1,834), Test(459)
 - Input: 3-gram vectors, Label: APT group
-- Performed 3-fold cross-validation to select optimal `C` and `gamma`
-
+- Best hyperparameters (via 10-fold CV): C = 100, γ = 10
+- Accuracy: Training(98.7%), Test(96.7%)
 ---
 
 ### Adversarial Attack (DarkHotel)
 
-- Attack: PGD with Line Search (PGD-LS)
-- Targeted only DarkHotel samples
-- Controlled L2 perturbation radius
+- Targeted samples: All 273 DarkHotel samples 
+- Attack type: PGD-LS (L2-norm based)
+- Attack success rate: 51.6%
+- Mean L2 distance of successful attacks: 0.165
+- Number of successful adversarial samples: 141
+
+<br>
+
+#### Comparison of predicted labels before and after PGD-LS on DarkHotel test samples (55)
+  - Before attack (blue): 91% were correctly predicted as “DarkHotel”
+  - After attack (red): Only 45% remained as “DarkHotel”; the rest were misclassified (mostly as APT29)
+    
+<img src="images/darkhotel_before_after.png" alt="darkhotel_before_after" align="left" width="70%">
+
+<br clear="left" />
+
+#### Target class distribution after successful PGD-LS attacks (from 141 adversarial samples)
+  - The majority were misclassified into APT29 (over 83 samples)
+  - Followed by Winnti, GorgonGroup, and Equation
+
+<img src="images/plot_attack_target_distribution.png" alt="plot_attack_target_distribution" align="left" width="70%">
+
+<br clear="left" />
 
 > Script: `run_pgdls_darkhotel_evasion.py`
 
