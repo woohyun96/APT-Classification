@@ -35,6 +35,7 @@ Malware samples from five APT groups:
 ### 2. Group-wise Top 20 N-gram Extraction
 
 - Identified the top 20 3-grams per group.
+![extract_top20_ngrams_by_group](extract_top20_ngrams_by_group.png)
 
 > Script: `extract_top20_ngrams_by_group.py`
 
@@ -53,18 +54,20 @@ Malware samples from five APT groups:
 
 ## Visualization
 
-### 🔹 N-gram Heatmap
+### N-gram Heatmap
 
 - Visualized top 30 high-variance n-grams across groups.
+![ngram_balanced_heatmap_en](ngram_balanced_heatmap_en.png)
 
 > Script: `apt_ngram_heatmap.py`
 
 ---
 
-### 🔹 Sample Distribution (t-SNE)
+### Sample Distribution (t-SNE)
 
 - Reduced 500-dim vectors to 3D using t-SNE.
 - Displayed clustering of group samples.
+![tsne_3d_final_adjusted](tsne_3d_final_adjusted.png)
 
 > Script: `plot_tsne_filtered_5groups.py`
 
@@ -127,6 +130,6 @@ Build an APT malware classifier robust to adversarial evasion.
 
 ## Disclaimer
 
-This project is intended for academic research and educational purposes only.  
+This project is intended for academic research only.  
 
 ---
