@@ -36,7 +36,7 @@ Malware samples from five APT groups:
 
 - Identified the top 20 3-grams per group.
   
-<img src="extract_top20_ngrams_by_group.png" alt="Top 20 N-grams by Group" align="left" width="50%">
+<img src="images/extract_top20_ngrams_by_group.png" alt="Top 20 N-grams by Group" align="left" width="50%">
 
 <br clear="left" />
 
@@ -62,6 +62,7 @@ Malware samples from five APT groups:
 - Visualized top 30 high-variance n-grams across groups.
 
 ![ngram_balanced_heatmap_en](ngram_balanced_heatmap_en.png)
+<img src="ngram_balanced_heatmap_en.png">
 
 > Script: `apt_ngram_heatmap.py`
 
@@ -72,7 +73,7 @@ Malware samples from five APT groups:
 - Reduced 500-dim vectors to 3D using t-SNE.
 - Displayed clustering of group samples.
   
-<img src="tsne_3d_final_adjusted.png" alt="t-SNE 3D Plot" align="left" width="50%">
+<img src="images/tsne_3d_final_adjusted.png" alt="t-SNE 3D Plot" align="left" width="50%">
 
 <br clear="left" />
 
