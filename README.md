@@ -136,22 +136,20 @@ The malware hashes were collected from multiple threat intelligence reports, and
 
 ### Goal
 
-Build an APT malware classifier robust to adversarial evasion.
+Build a malware classifier that can accurately detect APT groups even under adversarial evasion attempts.
 
 ---
 
-### Method 1: Adversarial Training
+### Approach
 
-- Added adversarial DarkHotel samples (`darkhotel_adv_vectors.csv`) to training data.
+- Adversarial Training: Augmented training with perturbed DarkHotel samples (darkhotel_adv_vectors.csv).
+- PCA (Dimensionality Reduction): Original 500-dimensional features reduced to 120D for stability and speed.
+- PGD (Projected Gradient Descent): Used during training to simulate attacks and harden the model.
+- MLP Classifier: Deep neural network with GELU activation and dropout for robustness.
 
----
+<img src="images/confusion_matrix.png" alt="confusion_matrix_robust" align="left" width="70%">
 
-### Method 2: PGD + PCA + Deep Learning
-
-- Dataset: 2293 original + 167 adversarial samples = 2460 total
-- Mini-batch size = 128 (64 clean + 64 perturbed per batch)
-- One training epoch includes 20 updates
-- Applied PCA for dimensionality reduction
+<br clear="left" />
 
 > Script: `robust_malware_classifier.py`
 
