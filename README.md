@@ -147,6 +147,7 @@ Build a malware classifier that can accurately detect APT groups even under adve
 - PGD (Projected Gradient Descent): Used during training to simulate attacks and harden the model.
 - MLP Classifier: Deep neural network with GELU activation and dropout for robustness.
 
+#### Final Test Accuracy: 0.7705
 <img src="images/confusion_matrix.png" alt="confusion_matrix_robust" align="left" width="70%">
 
 <br clear="left" />
