@@ -5,7 +5,6 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 import platform
 
-# Configure font settings (English font + fix for symbol display)
 def set_font():
     plt.rcParams['font.family'] = 'Arial'
     plt.rcParams['axes.unicode_minus'] = False
